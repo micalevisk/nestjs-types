@@ -1,19 +1,27 @@
 {
-  "name": "nestjs-type-enhancements",
-  "version": "0.0.0-development",
-  "description": "",
-  "main": "./dist/recommended.js",
-  "module": "./dist/recommended.js",
-  "types": "./dist/recommended.d.ts",
+  "name": "nestjs-types",
+  "version": "1.0.0",
+  "description": "Monkey patching types for a better Developer Experience when working with NestJS official packages.",
+  "types": "./recommended.d.ts",
   "scripts": {
+    "build": "tsc"
   },
-  "keywords": [],
+  "files": [
+    "README.md",
+    "*.d.ts"
+  ],
+  "keywords": ["nestjs", "types"],
   "author": "Micael Levi L. C.",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micalevisk/nestjs-types"
+  },
   "devDependencies": {
-    "@nestjs/platform-express": "^10.0.5",
-    "@nestjs/platform-fastify": "^10.0.5",
-    "@types/express": "^4.17.17",
-    "fastify": "^4.19.2"
+    "@nestjs/platform-express": "^10",
+    "@nestjs/platform-fastify": "^10",
+    "@types/express": "^4",
+    "fastify": "^4",
+    "typescript": "^5.1.6"
   }
 }

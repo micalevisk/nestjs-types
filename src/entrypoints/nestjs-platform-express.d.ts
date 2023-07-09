@@ -1,7 +1,13 @@
-import type { Request as Rq } from 'express';
-import type { Response as Rs } from 'express';
-
+import type { Request, Response } from 'express'
 declare module '@nestjs/platform-express' {
-  export type RequestExpress = Rq
-  export type ResponseExpress = Rs
+  /**
+   * An alias to `Express.Request` (from `@types/express`).
+   * @author `nestjs-platform-expresss`
+   */
+  export type RequestExpress = Request
+  /**
+   * An alias to `Express.Response` (from `@types/express`).
+   * @author `nestjs-platform-expresss`
+   */
+  export type ResponseExpress = Response
 }
