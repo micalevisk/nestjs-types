@@ -11,7 +11,7 @@ declare module '@nestjs/platform-fastify' {
    */
   export type ResponseFastify = FastifyReply
   /**
-   * @author `nestjs-platform-expresss`
+   * @author `nestjs-types`
    */
   export type NextFunctionFastify = () => void
 }
